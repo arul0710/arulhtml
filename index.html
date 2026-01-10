@@ -1,111 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arul html</title>
-</head>
-<body>
-    <h1>Arul maniraj 19.12.2025</h1>
-    <h2>Arul maniraj 19.12.2025</h2>
-    <h3>Arul maniraj 19.12.2025</h3>
-    <h4>Arul maniraj 19.12.2025</h4>
-    <h5>Arul maniraj 18.12.2025</h5>
-    <h6>Arul maniraj 18.12.2025</h6>
+    <title>TicketShow</title>
 
-    <br><p>Arul</p>
-   
-    <b>kutti</b><br>
-
-    <strong>iam Arul</strong><br>
-    <i>arul</i><br>
-    <em>Amaraavathi college</em><br>
-    <mark>kutti</mark><br>
-    <small>In our college we celebrate christmas function</small>
-    <del>hi am arul</del><br>
-    <b>kuhliuh<sub> arul is a student</sub></b>
-    <p>Merry <sup>christmas</sup> to all</p>
-    <ins>Arul is a good student</ins>
-    <blockquote><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum explicabo reiciendis odio consectetur omnis dignissimos dolor ex qui eaque inventore quaerat tempore, saepe ullam quae et maiores quia ipsum assumenda?</p></blockquote>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum fugit voluptate qui deleniti alias cumque tempora fuga aliquid, molestias nisi? Obcaecati voluptatem perferendis quaerat temporibus, sed molestias at consequuntur nisi! <q>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora fugit delectus vero quaerat. Nobis iste, consequatur odit delectus aspernatur cumque exercitationem adipisci, totam dicta excepturi maiores? Corporis, debitis earum! Accusantium.</q></p>
-    <p>the <abbr title="kutti">good</abbr>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis excepturi aut cum amet natus cumque ducimus, doloremque numquam animi corporis repudiandae sunt porro cupiditate fugiat molestiae. Nemo itaque dignissimos totam.</p>
-    <address>
-        19/37,periyae salai<br>
-        3rd floor nrp export<br>
-        vengamedu<br>
-        karur<br>
-    </address>
-    <p>hi <cite>kutti</cite></p>
-    <bdo dir="rtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, minima aspernatur? Assumenda cum vel voluptate enim ducimus, distinctio hic repellendus iure, voluptatum in atque velit laudantium quidem quis similique beatae?</bdo>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31336.956260551564!2d78.06976!3d10.9543424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1766139769926!5m2!1sen!2sin"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- CSS inside HTML -->
     <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
-        th, td {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 40px;
-}
-tr:nth-child(even) {
-  background-color:purple;
-}
-  
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #d32f2f;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar input {
+            width: 300px;
+            padding: 8px;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #000, #444);
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        /* Movies Section */
+        .movies {
+            padding: 30px;
+        }
+
+        .movies h2 {
+            margin-bottom: 20px;
+        }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .movie-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .movie-card h3 {
+            padding: 10px;
+        }
+
+        .movie-card p {
+            padding: 0 10px 10px;
+            color: gray;
+        }
+
+        .movie-card button {
+            margin: 10px;
+            width: calc(100% - 20px);
+            padding: 8px;
+            background-color: #6e2fd3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .movie-card button:hover {
+            background-color: #b71c1c;
+        }
     </style>
-        <table style="width:70%" >
-            <tr>
-                <colgroup>
-                    <col span="2" style="background-color: #a3aaca">
-                </colgroup> 
-                <th>Name</th>
-                <th>Contact</th>
-                <th>Class</th>
-            </tr>
-            <tr>
-                <td>College</td>
-                <td>Register number</td>
-                <td>District</td>
-            </tr>
-            <tr>
-                <th colspan="2">Name</th>
-                <th>Age</th>
-            </tr>
-            <tr>
-                <td>Arul</td>
-                <td>24055460500111002</td>
-                <td>Karur</td>
-            </tr>
-            
-            
-        </table>
-        <ul style="list-style-type: decimal-leading-zero;">
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-        </ul>
-        <ol type="A">
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-        </ol>
-        <dl>
-            <dt>Name</dt>
-            <dd>- Arul</dd>
-            <dt>Class</dt>
-            <dd>- II BCA</dd>
-        </dl>
-       Arul is an student <div>He studied in amaraavathi college of arts and science</div> He was an good boy.
-    <h1 style="color: cadetblue ;"id="Arul">Arul</h1>
-    <button class="click me">Click me</button>
+</head>
 
-
+<body>
 
     
+    <header class="navbar">
+        <div class="logo">TicketShow</div>
+        <input type="text" placeholder="peace place"/>
+    </header>
+
+    
+    <section class="hero">
+        <h2>Book Your Movie Tickets</h2>
+        <p>Fast • Easy • Secure</p>
+    </section>
+
+    
+    <section class="movies">
+        <h2>Recommended Movies</h2>
+
+        <div class="movie-grid">
+
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/300x400" alt="Movie">
+                <h3>Leo</h3>
+                <p>Action / Drama</p>
+                <button>Book Now</button>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/300x400" alt="Movie">
+                <h3>Jailer</h3>
+                <p>Action / Thriller</p>
+                <button>Book Now</button>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/300x400" alt="Movie">
+                <h3>Vikram</h3>
+                <p>Action</p>
+                <button>Book Now</button>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/300x400" alt="Movie">
+                <h3>Master</h3>
+                <p>Drama</p>
+                <button>Book Now</button>
+            </div>
+
+        </div>
+    </section>
+
 </body>
+
 </html>
